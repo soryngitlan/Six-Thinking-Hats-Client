@@ -1,0 +1,9 @@
+<template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="styles/style.css"></require>
+
+  <compose if.bind="!router.currentInstruction.config.settings.hideNav" view-model="nav-bar"></compose>
+
+
+  <router-view></router-view>
+</template>

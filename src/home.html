@@ -1,0 +1,14 @@
+<template>
+    <h1>${message}</h1>
+    <h3 innerHtml.bind="hVar">Opps</h3>
+    <form submit.delegate="saveUserData()">
+        <input type="text" value.bind="user.name">
+        <input type="email" value.bind="user.email">
+        <button type="submit">Save Form</button>
+    </form>
+
+    <compose repeat.for="imageSrc of listOfImages" view-model="imageBlock"></compose>
+
+
+    <button click.delegate="showInputVariable()" class="btn">SAVE</button>
+</template>

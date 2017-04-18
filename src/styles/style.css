@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eceff1;
+}
+
+.intro-page .custom-bar {
+    padding: 20px;
+    z-index: 2;
+    /*position: absolute;*/
+}
+
+.intro-page .custom-bar .six-hats-logo img {
+    height: 30px;
+}
+
+.intro-page .welcome {
+    margin-top: -70px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: -1px;
+    height: calc(75vh + 1px);
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/src/images/ciuvak.jpg);
+}
+
+.intro-page .welcome-body {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro-page .welcome-text {
+    padding-bottom: 20px;
+}
+
+.intro-page .welcome-body .to-login {
+    border-radius: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+.intro-page #info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.intro-page #info .container > div {
+    padding: 30px;
+    border-right: 10px solid #c2c9d0;
+    border-left: 10px solid #c2c9d0;
+}
+
+@media (min-width: 993px) {
+    .intro-page #info .container .info-title {
+        padding-bottom: 0px;
+        margin-bottom: -130px;
+    }
+
+    .intro-page #info .container .info-conclusion {
+        padding-bottom: 0px;
+        margin-top: -130px;
+    }
+
+    .intro-page .info-title .row > div,
+    .intro-page .info-conclusion .row > div {
+        shape-outside: circle();
+        /*margin: 0px 15px 15px 0px;*/
+    }
+
+    /*#info p {*/
+    /*!*margin: 0 130px 0 130px;*!*/
+    /*padding: 30px;*/
+    /*border-right: 10px solid #c2c9d0;*/
+    /*border-left: 10px solid #c2c9d0;*/
+    /*}*/
+    .intro-page #info .container > div {
+        border: none;
+    }
+}
+
+/**
+TESTING CIRCLE
+ */
+
+.col {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /*margin:4% 0 5% 3%;*/
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+}
+
+.col .spacer {
+    position: relative;
+    padding-top: 100%;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 10px solid #eceff1;
+    background-color: #c2c9d0;
+    color: #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+.circle:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -2%;
+}
+
+.circle h3 {
+    /*font-size: 0.9em;*/
+    color: #18304c;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+/**
+END TESTING CIRCLE
+ */
+.intro-page footer {
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/src/images/footer-image.jpg);
+    height: 25%;
+}
+
+.intro-page footer h2 {
+    color: white;
+    line-height: calc(25vh + 1px);
+    text-align: center;
+    margin: 0;
+    /*padding-top: 5%;*/
+}
+
+.image-block {
+    width: 100px;
+    margin: 30px 0;
+}
+
+.image-block img {
+    width: 100%;
+}
+
+/* ********************* LOGIN & SIGN UP ********************* */
+.login-sign-up-page {
+    color: #263238;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/src/images/login-wallpaper.jpg);
+    height: 100vh;
+}
+.login-sign-up-page .login-area .row{
+    margin-top: 25%;
+    background-color: #d4dce0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cad4d8' fill-opacity='0.63' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+.login-sign-up-page .intro-advantages {
+    padding: 50px;
+    background: url('/src/images/the-hat.png') center center no-repeat;
+}
+.login-sign-up-page .login-sign-up-forms{
+    background-color: white;
+}
+.login-sign-up-page .login-area .btn-default{
+    border: 0px solid transparent;
+    border-radius: 0px;
+    background-color: #d4dce0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cad4d8' fill-opacity='0.63' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    font-weight: bold;
+    font-size: 130%;
+}
+.login-sign-up-page .panel-title a,
+.login-sign-up-page .panel-title a:hover{
+    display: inline-flex;
+    text-decoration: none;
+}
